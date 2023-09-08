@@ -1,23 +1,33 @@
 ## script for scrap data from a website and insert it in wp platform
 
-#### Download the script file to your computer.
+#### Setup script in computer
 
-- 1 install `node js` in your computer.
-- 2 Open script in any code editor (vsc) or bash terminal(ubuntu).
-- inside the script file in the root main creat file `.env` , pust this inside him
+- 1 Download the script file .
+- 2 install `node js` in your computer.
+- 3 Open script in any code editor (vsc) or bash terminal (ubuntu).
+- inside the script file in the root directory creat file `.env` , pust this inside it
 
   ```
-  wp_USERNAME=
-  wp_PASSWORD=
-  API_LINK=
+  wp_USERNAME="put wp username"
+  wp_PASSWORD="put wp password"
+  API_LINK="put your manga link"
 
-  SCRAPING_URL=
-  MG_NAME=
+  SCRAPING_URL=""
+  MG_NAME=""
   ```
 
-- 2 https://github.com/WP-API/Basic-Auth
-- WP REST API Controller
-- TaxoPress
+- 3 In the code editor run this command to install all dependencies `npm install`.
+
+#### Setup wp website
+
+Install the packages
+
+- 1 https://github.com/WP-API/Basic-Auth
+- 2 WP REST API Controller
+
+* 3 TaxoPress , we will use it later to add tags to all Comics posts
+
+- 4 in wp admin page got to Tools => REST API Controller => Comics , and enable it
 
 #### add the following code to htaccess
 
