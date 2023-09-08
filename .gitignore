@@ -1,6 +1,6 @@
 /node_modules
 *.env
 photo.js
-/images/*.*
+/images/*.txt
 getImages.js
 chapters.json
