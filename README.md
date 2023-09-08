@@ -5,12 +5,13 @@
 - 1 install `node js` in your computer.
 - 2 Open script in any code editor (vsc) or bash terminal(ubuntu).
 - inside the script file in the root main creat file `.env` , pust this inside him
-  `wp_USERNAME=
-wp_PASSWORD=
-API_LINK="
-SCRAPING_URL=
-MG_NAME=
-   `
+
+  ```wp_USERNAME=
+  wp_PASSWORD=
+  API_LINK="
+  SCRAPING_URL=
+  MG_NAME=
+  ```
 
 - 2 https://github.com/WP-API/Basic-Auth
 - WP REST API Controller
