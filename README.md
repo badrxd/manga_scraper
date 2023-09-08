@@ -1,6 +1,6 @@
 ## script for scrap data from a website and insert it in wp platform
 
-### Setup script in computer
+### -Setup script in computer
 
 - 1 Download the script file .
 - 2 install `node js` in your computer.
@@ -18,16 +18,16 @@
 
 - 3 In the code editor run this command to install all dependencies `npm install`.
 
-### Setup wp website
+### -Setup wp website
 
-##### Install the plugins
+#### Install the plugins
 
 - 1 `https://github.com/WP-API/Basic-Auth`
 - 2 `WP REST API Controller`
 - 3 `TaxoPress` , (we will use this plugins later to add tags to all Comics posts)
 - 4 in wp admin page got to Tools => REST API Controller => Comics , and enable it
 
-### add the following code to htaccess
+### -add the following code to htaccess
 
 `
 RewriteCond %{HTTP:Authorization} ^(.)
