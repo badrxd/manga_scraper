@@ -8,7 +8,8 @@
 
   ```wp_USERNAME=
   wp_PASSWORD=
-  API_LINK="
+  API_LINK=
+
   SCRAPING_URL=
   MG_NAME=
   ```
