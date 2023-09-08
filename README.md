@@ -20,13 +20,11 @@
 
 #### Setup wp website
 
-Install the packages
+Install the plugins
 
-- 1 https://github.com/WP-API/Basic-Auth
-- 2 WP REST API Controller
-
-* 3 TaxoPress , we will use it later to add tags to all Comics posts
-
+- 1 `https://github.com/WP-API/Basic-Auth`
+- 2 `WP REST API Controller`
+- 3 `TaxoPress` , (we will use this plugins later to add tags to all Comics posts)
 - 4 in wp admin page got to Tools => REST API Controller => Comics , and enable it
 
 #### add the following code to htaccess
