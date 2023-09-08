@@ -1,8 +1,0 @@
-wp_USERNAME=admin
-wp_PASSWORD="Badrxd@123@"
-API_LINK="https://read-jinx.online/wp-json/wp/v2/comic"
-
-
-
-SCRAPING_URL="https://mangaclash.com/manga/love-jinx"
-MG_NAME="Love Jinx"
