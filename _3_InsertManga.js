@@ -3,9 +3,8 @@ const json = require("./chapters.json");
 const fs = require("fs");
 require("dotenv").config();
 
-const insertManga = async ({ name }) => {
+const insertManga = async ({ name }, filePath) => {
   let contents;
-  const filePath = `./images/${name}.txt`;
   try {
     contents = fs.readFileSync(filePath, "utf8");
     // make the post request*
@@ -36,21 +35,33 @@ const insertManga = async ({ name }) => {
   }
 };
 
-const POST = async (params) => {
+const POST = async () => {
   let respond;
+  let filePath;
   for (const e of json) {
-    respond = await insertManga(e);
+    filePath = `./images/${e.name}.txt`;
+    respond = await insertManga(e, filePath);
     if (!respond) {
       console.log(`function was stopped in ${e.name}`);
       break;
     }
-
+    if (fs.existsSync(filePath)) {
+      // The file exists, so you can proceed with deleting it
+      fs.unlink(filePath, (err) => {
+        if (err) {
+          console.error(err);
+        }
+        console.log(`File (${e.name}.txt) deleted successfully\n`);
+      });
+    }
     //pause for 10 seconds before the next iteration.
     await new Promise((resolve) =>
       setTimeout(() => {
-        console.log(`****** ${e.name} done ******\n***********************\n`);
+        console.log(
+          `######## ${e.name} done ########\n########################\n`
+        );
         resolve();
-      }, 10000)
+      }, 3000)
     );
   }
 };

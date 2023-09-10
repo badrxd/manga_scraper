@@ -3,4 +3,7 @@
 photo.js
 /images/*.txt
 getImages1.js
-chapters.json
+*copy.js
+*.json
+_0_Find_Replace.js
+*.gitignore
